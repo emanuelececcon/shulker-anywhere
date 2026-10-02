@@ -1,0 +1,20 @@
+# ShulkerAnywhere opens shulker boxes from your own inventory without placing them.
+# Apply changes with /shulkeranywhere reload.
+
+# false = nobody can open boxes this way and every open box is closed.
+# /shulkeranywhere disable and enable change this value.
+enabled: true
+
+open:
+  # Right-click a shulker box in your inventory screen, also in the lower half of a chest or other
+  # container screen. Left-click still picks the box up.
+  from-inventory: true
+  # Right-click while looking at the air with a shulker box in your main hand or off hand.
+  # Right-clicking a block still places the box.
+  from-hand: true
+
+# Play the shulker box open and close sounds.
+sounds: true
+
+# Log every open and close, with the number of items in the box, to the console.
+log-sessions: false

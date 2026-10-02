@@ -1,0 +1,10 @@
+name: SaTest
+version: 1
+main: satest.SaTest
+api-version: "26.3"
+commands:
+  satest:
+    permission: satest.use
+permissions:
+  satest.use:
+    default: op

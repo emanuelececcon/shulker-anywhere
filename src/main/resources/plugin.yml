@@ -1,0 +1,23 @@
+name: ShulkerAnywhere
+version: ${project.version}
+main: io.github.emanuelececcon.shulkeranywhere.ShulkerAnywherePlugin
+api-version: "26.3"
+description: Open shulker boxes from your inventory without placing them
+authors:
+  - emanuelececcon
+website: https://github.com/emanuelececcon/shulker-anywhere
+
+commands:
+  shulkeranywhere:
+    description: Status, reload, enable or disable ShulkerAnywhere
+    usage: /shulkeranywhere <status|reload|enable|disable>
+    aliases: [sa]
+    permission: shulkeranywhere.admin
+
+permissions:
+  shulkeranywhere.use:
+    description: Open shulker boxes from the inventory or the hand without placing them
+    default: true
+  shulkeranywhere.admin:
+    description: Use /shulkeranywhere status, reload, enable and disable
+    default: op
